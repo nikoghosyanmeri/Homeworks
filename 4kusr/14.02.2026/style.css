@@ -1,0 +1,25 @@
+body {
+    margin: 20px;
+}
+
+.tr {
+    width: 100%;
+    border-bottom: 3px solid black;
+    height: 60px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.car {
+    position: absolute;
+}
+.cont{
+    text-align: center;
+}
+button{
+    padding: 10px 20px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
