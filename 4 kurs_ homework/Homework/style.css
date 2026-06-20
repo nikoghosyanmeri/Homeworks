@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+#scoreText {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border: 3px solid black;
+    position: relative;
+}
+
+.snakePart {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    border: 1px solid darkgreen;
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+}

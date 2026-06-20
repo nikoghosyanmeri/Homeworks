@@ -1,0 +1,90 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+font-family:Segoe UI,Arial,sans-serif;
+background:linear-gradient(135deg,#020617,#0f172a,#020617);
+color:white;
+overflow:hidden;
+}
+
+#scoreText{
+font-size:32px;
+font-weight:700;
+letter-spacing:2px;
+margin-bottom:30px;
+padding:12px 28px;
+border-radius:12px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.6),inset 0 0 15px rgba(255,255,255,0.05);
+}
+
+#board{
+width:400px;
+height:400px;
+position:relative;
+border-radius:18px;
+background:
+linear-gradient(#1e293b 1px,transparent 1px),
+linear-gradient(90deg,#1e293b 1px,transparent 1px),
+radial-gradient(circle at center,#0f172a,#020617);
+background-size:20px 20px,20px 20px,100% 100%;
+box-shadow:
+0 0 60px rgba(0,0,0,0.9),
+0 0 40px rgba(34,197,94,0.2),
+inset 0 0 25px rgba(0,0,0,0.9);
+overflow:hidden;
+}
+
+.snakePart{
+width:20px;
+height:20px;
+position:absolute;
+border-radius:6px;
+background:linear-gradient(145deg,#4ade80,#16a34a);
+box-shadow:
+0 0 10px #22c55e,
+inset 0 0 6px rgba(255,255,255,0.4);
+animation:snakeGlow 1s infinite alternate;
+}
+
+.food{
+width:20px;
+height:20px;
+position:absolute;
+border-radius:50%;
+background:radial-gradient(circle,#fb7185,#ef4444,#7f1d1d);
+box-shadow:
+0 0 20px #ef4444,
+0 0 40px rgba(239,68,68,0.6);
+animation:foodPulse 0.8s infinite alternate;
+}
+
+@keyframes snakeGlow{
+from{
+transform:scale(1);
+filter:brightness(1);
+}
+to{
+transform:scale(1.05);
+filter:brightness(1.3);
+}
+}
+
+@keyframes foodPulse{
+from{
+transform:scale(0.9);
+}
+to{
+transform:scale(1.15);
+}
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <section class="box">
+    <div class="left-side">
+      <h1>POP design</h1>
+      <div class="title-line"></div>
+      <p>New HTML Template with pop up pages <br />and use this layout for your website</p>
+    </div>
+
+    <div class="right-side">
+      <div class="row">
+        <div class="menu-box" id="btn-welcome">
+          <i class="fa-solid fa-house"></i>
+          <span>Welcome</span>
+        </div>
+        <div class="menu-box" id="btn-team">
+          <i class="fa-solid fa-people-roof"></i>
+          <span>Our Team</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="menu-box" id="btn-work">
+          <i class="fa-solid fa-handshake"></i>
+          <span>Our Work</span>
+        </div>
+        <div class="menu-box" id="btn-contact">
+          <i class="fa-regular fa-comment"></i>
+          <span>Contact</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Copyright &copy; 2026 Your Company. Design: Tooplate
+  </footer>
+
+  <div class="overlay" id="overlay">
+    <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+
+      <button class="popup-close" id="btn-close" aria-label="Close popup">&times;</button>
+
+      <h2 id="popup-title">Welcome to Pop Design</h2>
+
+      <div class="popup-content">
+
+        <div class="popup-col">
+          <img src="img1.JPG">
+          <p>
+            You are allowed to download, modify and use this template for your
+            commercial or business websites.
+          </p>
+          <p>
+            Please tell your friends about
+            <a href="https://www.tooplate.com" target="_blank">Tooplate</a>.
+            That will be very helpful for us. Thank you.
+          </p>
+        </div>
+
+        <div class="popup-col">
+          <p>
+            You are NOT allowed to put this template ZIP file for a download
+            purpose on any template collection website.
+          </p>
+          <p>
+            If you have any kind of question or comment, please feel free to
+            <a href="https://www.tooplate.com/contact" target="_blank">contact us</a>.
+            You are welcome.
+          </p>
+          <img src="img2.JPG">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay-team">
+    <div class="popup" role="dialog" aria-modal="true" aria-labelledby="team-popup-title">
+
+      <button class="popup-close" id="btn-close-team" aria-label="Close popup">&times;</button>
+
+      <h2 id="team-popup-title">Background of Our Team</h2>
+
+      <div class="team-popup-content">
+        <div class="team-text-col">
+          <p>
+            Vestibulum aliquet, arcu accumsan lobortis bibendum, justo velit efficitur lorem,
+            at pulvinar mi justo nec lacus. Nullam et libero aliquet, luctus nunc sit amet,
+            tincidunt ligula. Sed finibus ante sed tortor cursus, nec malesuada lectus interdum.
+          </p>
+          <p>
+            Sed ex turpis, vulputate in efficitur id, lobortis eget nibh.
+            Pellentesque maximus ipsum eget velit imperdiet sodales.
+            Suspendisse in blandit mi.
+          </p>
+          <p>
+            Pellentesque finibus felis risus, ut malesuada felis viverra at.
+            Quisque accumsan in mi non hendrerit.
+          </p>
+        </div>
+
+        <div class="team-img-col">
+          <img src="img3.JPG">
+        </div>
+
+      </div>
+
+      <button class="read-more-btn">Read More</button>
+
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay-work">
+    <div class="popup" role="dialog" aria-modal="true">
+
+      <button class="popup-close" id="btn-close-work">&times;</button>
+
+      <h2>Our Work</h2>
+
+      <p class="work-desc">
+        Aliquam interdum, nisl sed faucibus tempor, massa velit laoreet ipsum, et faucibus sapien
+        magna at enim. Suspendisse a dictum tortor, vel rhoncus libero. Integer at lacus velit.
+        Nullam dapibus venenatis placerat.
+      </p>
+      <div class="slideshow-wrapper">
+        <button class="slide-arrow-left" id="arrow-left">&#8249;</button>
+        <div style="overflow: hidden;">
+          <div class="slide-track" id="slide-track">
+            <img class="slide-img" src="img4.JPG">
+            <img class="slide-img" src="img5.JPG">
+            <img class="slide-img" src="img6.JPG">
+            <img class="slide-img" src="img7.JPG">
+            <img class="slide-img" src="img8.JPG">
+            <img class="slide-img" src="img9.JPG">
+
+            <img class="slide-img" src="img4.JPG">
+            <img class="slide-img" src="img5.JPG">
+            <img class="slide-img" src="img6.JPG">
+            <img class="slide-img" src="img7.JPG">
+            <img class="slide-img" src="img8.JPG">
+            <img class="slide-img" src="img9.JPG">
+            </div>
+        </div>
+
+        <button class="slide-arrow-right" id="arrow-right">&#8250;</button>
+
+      </div>
+
+      <div class="slide-dots">
+        <button class="dot active" id="dot-0"></button>
+        <button class="dot"        id="dot-1"></button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay-contact">
+    <div class="popup" role="dialog" aria-modal="true">
+
+      <button class="popup-close" id="btn-close-contact">&times;</button>
+
+      <h2>Contact Us</h2>
+
+      <p class="contact-desc">
+        Lorem ipsum dolor site amet, consectetur adipiscing elit. Aliquam interdum, nisl sed
+        faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim.
+        Suspendisse a dictum tortor, vel rhoncus libero.
+      </p>
+
+      <div class="contact-row">
+        <input class="contact-input" type="text"  placeholder="Name"  />
+        <input class="contact-input" type="email" placeholder="Email" />
+      </div>
+
+      <textarea class="contact-input contact-textarea" placeholder="Message"></textarea>
+
+      <button class="contact-submit">Submit</button>
+
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
